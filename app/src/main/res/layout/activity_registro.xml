@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_ellipse_1"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineboton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineboton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <TextView
+        android:id="@+id/tvRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fasteroneregular"
+        android:text="Registro"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stylo_bordes_edit"
+        android:drawableStart="@mipmap/user"
+        android:ems="10"
+        android:hint="Ingresa nombre"
+        android:maxLength="20"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/et2"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineboton" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stylo_bordes_edit"
+        android:drawableLeft="@mipmap/mail"
+        android:ems="10"
+        android:hint="Ingresa correo"
+        android:inputType="textEmailSubject"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@id/et3"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stylo_bordes_edit"
+        android:drawableLeft="@mipmap/key"
+        android:ems="10"
+        android:hint="Ingresa contraseña"
+        android:inputType="textPassword"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@id/et4"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stylo_bordes_edit"
+        android:drawableLeft="@mipmap/confir_key"
+        android:ems="10"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonGuardar"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toBottomOf="@+id/et3" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="464dp"
+        android:alpha="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/torre" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F31B83"
+        android:onClick="guardar"
+        android:text="Guardar"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonCancelar"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toBottomOf="@id/et4" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F31B83"
+        android:onClick="cancelar"
+        android:text="cancelar"
+        android:textSize="13dp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toBottomOf="@id/buttonGuardar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

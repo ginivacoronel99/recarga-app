@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SplashTheme" parent="Theme.Recargas">
+        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_phonepeque</item>
+    </style>
+
+
+</resources>

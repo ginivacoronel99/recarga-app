@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recarga">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mobile_phone_14405"
+        android:label="Recargas"
+        android:roundIcon="@drawable/mobile_phone_14405"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Recargas">
+        <activity
+            android:name=".splash_screen"
+            android:exported="false" />
+        <activity
+            android:name=".historial"
+            android:exported="false" />
+        <activity
+            android:name=".recarga"
+            android:exported="false" />
+        <activity
+            android:name=".principal"
+            android:exported="false" />
+        <activity
+            android:name=".registro"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

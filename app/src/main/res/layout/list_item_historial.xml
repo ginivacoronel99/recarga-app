@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono:"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NN"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operador:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/operador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NN"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NN"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NN"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/idImagen"
+            android:layout_marginTop="11dp"
+            android:background="#F31B83" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
